@@ -2,7 +2,6 @@ import ReactDOM from 'react-dom';
 import Demo from './';
 
 import 'antd/dist/antd.min.css';
-// import '../src/styles/antd-overwrite.scss';
 
 ReactDOM.render(
   <Demo />,

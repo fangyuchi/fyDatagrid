@@ -98,7 +98,6 @@ if (isProd) {
     entry: {
       index: path.resolve(__dirname, './src/index.ts'),
       utils: path.resolve(__dirname, './src/utils/index.ts'),
-      'antd-overwrite': path.resolve(__dirname, './src/styles/index.ts')
     },
     output: {
       path: path.join(__dirname, 'dist'),
