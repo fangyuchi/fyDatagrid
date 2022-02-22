@@ -1,0 +1,57 @@
+@import '../styles/default.scss';
+
+.#{$pkg-prefix}-datepicker.ant-picker {
+  
+  &.ant-picker-disabled {
+    border-color: $disabled-border-color;
+    background-color: $disabled-bg-color;
+  }
+
+  &:not(.ant-picker-disabled):hover {
+    border-color: $active-color;
+  }
+
+  &.ant-picker-focused {
+    box-shadow: none !important;
+  }
+
+  &.#{$pkg-prefix}-datepicker-nointeraction {
+    &.ant-picker-disabled {
+      color: unset;
+      background-color: unset;
+      cursor: default;
+
+      input {
+        cursor: default;
+      }
+    }
+  }
+}
+
+.#{$pkg-prefix}-daterangepicker.ant-picker {
+  &.ant-picker-disabled {
+    border-color: $disabled-border-color;
+    background-color: $disabled-bg-color;
+  }
+  
+  &:not(.ant-picker-disabled):hover {
+    border-color: $active-color;
+  }
+
+  &.ant-picker-focused {
+    box-shadow: none !important;
+  }
+
+  &.#{$pkg-prefix}-daterangepicker-nointeraction {
+    &.ant-picker-disabled {
+      color: unset;
+      background-color: unset;
+      cursor: default;
+
+      .ant-picker-separator,
+      input {
+        cursor: default;
+      }
+    }
+  }
+}
